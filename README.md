@@ -1,7 +1,7 @@
 # 🛡️ My Cybersecurity Learning Journey | TryHackMe + CompTIA + Projects
 
 Hi! 👋  
-I’m a university student in Austria (Vienna University of Economics and Business) currently transitioning into the world of **cybersecurity** with the goal of becoming a **white hat hacker**. I come from a business and marketing background but have discovered a deep passion for IT, ethical hacking, and helping secure digital environments. That's why I am trying to do my best in order to learn my first job. 
+I’m a university student in Austria (Vienna University of Economics and Business) currently transitioning into the world of **cybersecurity** with the goal of getting a job in the cybersecurity field. I come from a business and marketing background but have discovered a deep passion for IT, ethical hacking, and helping secure digital environments. That's why I am trying to do my best in order to learn my first job. 
 
 This repository is where I document my full learning path — from the first Linux commands to building my own homelab and solving Capture the Flag (CTF) challenges.  
 It’s both my **study log** and my **portfolio-in-progress**.
