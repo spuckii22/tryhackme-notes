@@ -1,138 +1,122 @@
-# 🧩 TryHackMe – Defensive Security Intro
+# 🛡️ TryHackMe – Defensive Security Intro
 
 ## 📘 Room Information
-- **Path:** -> Pre-Security -> Introduction to Cyber Security ->  Defensive Security Intro
-- **Difficulty:** Easy 
-- **Completed on:** 2025-05-10
-- **Room Link:** https://tryhackme.com/room/defensivesecurityintro
+- **Path:** Pre-Security → Introduction to Cyber Security → Defensive Security Intro  
+- **Difficulty:** Easy  
+- **Completed on:** 2025-05-10  
+- **Room Link:** [Defensive Security Intro – TryHackMe](https://tryhackme.com/room/defensivesecurityintro)
 
 ---
 
 ## 🔍 Room Overview
 
-> Short summary of the room:
-While the previous room was about learning the offensive security side (exploiting software bugs, leveraging insecure setups, taking advantage of unenforced access control policies, pentesting), this room will examine its counterpart.
-Two Main tasks:
-1. Preventing intrusions from occuring
-2. Detecting intrusions when they occur and responding properly
+This room focuses on the **defensive side of cybersecurity**, in contrast to offensive roles such as penetration testing or ethical hacking. The two main goals in defensive security are:
 
-So it's about:
-- user cyber security awareness: training users about cyber security
-- documenting and managing assets: need to know the systems and devices
-- updating and patching systems: ensuring that computers, servers, and network devices are correctly updated and patched
-- setting up preventative security devices: firewall and intrusion prevention systems (IPS) -> Firewalls control what network traffic can go inside and what can leave the system or network. IPS blocks any network traffic that matches present rules and attack signatures.
-- setting up logging and monitoring devices
+1. **Preventing intrusions** from occurring  
+2. **Detecting and responding** to intrusions when they happen  
 
+Key components of this approach include:
+
+- **User security awareness:** Training users on cyber threats and safety practices  
+- **Asset documentation and management:** Keeping an inventory of systems and devices  
+- **System updates and patching:** Ensuring software and hardware are up to date  
+- **Preventative security tools:** Implementing firewalls and Intrusion Prevention Systems (IPS)  
+- **Logging and monitoring:** Collecting and analyzing activity data from systems and networks  
 
 ---
 
-## 🔍 Room Walkthrough
-**Task 2: Areas of Defensive Security**
+## 🧩 Key Areas of Defensive Security
 
-Cover topics such as:
-1. Security Operations Center (SOC) - Threat Intelligence
-2. Digital Forensics and Incident Response (DFIR) - Malware Analysis
+### 🛰️ Security Operations Center (SOC)
 
+A SOC is a team of professionals who monitor systems and networks for security events and respond to them. Key responsibilities include:
 
-**Security Operations Center (SOC):**
+- **Vulnerability Management:** Identifying and patching system weaknesses  
+- **Policy Enforcement:** Detecting violations of security policies (e.g., data uploads to unauthorized platforms)  
+- **Unauthorized Activity Detection:** Responding to stolen credentials and suspicious access  
+- **Network Intrusion Detection:** Monitoring and responding to external attacks or exploitation attempts  
 
-Team of cyber security professionals that monitors the network and its systems to detect malicious cyber security events
+---
 
-**Main areas of interest:**
-> Vulnerabilites(weakness): whenever a system vulnerability is discovered, it is essential to fix it by installing a proper update or patch.
-> Policy violations: A security policy is a set of rules required to protect the network and systems. (violation if users upload confidential company data to an online storage device)
-> Unauthorized activity: user's login name and password are stolen -> SOC must detect and block such an event asap before further damage is done.
-> Network intrusions: Intrusion can occur when a user clicks on a malicious link or an attacker exploits a public server -> must detect it asap
+### 📊 Threat Intelligence
 
+**Threat Intelligence** refers to gathering and analyzing data to anticipate and defend against cyber threats.  
 
-**Threat Intelligence:**
-> Intelligence -> information you gather about actual and potential enemies
-> Threat -> any action that disrupt or adversely affect a system
-> Threat Intelligence -> collects information to help the company better prepare against potential adversaries
-> Different companies have different adversaries
-> Intelligence needs data -> Data has to be collected, processed, and analyzed.
-> Data is collected from local sources (network logs) and public sources (forums)
-> Data processing -> arranging the data into a format suitable for analysis.
-> Analysis phase -> seeks to find more information about the attackers and their motives and aims to create a list of recommendations and actionable steps.
-> Learning about adversaries -> tactics, techniques, procedures
-> Result -> identify the adversary and predict their activity -> mitigate their attacks and prepare a response strategy
+- Focused on understanding **adversaries**, their **tactics, techniques, and procedures (TTPs)**  
+- Intelligence is gathered from:
+  - **Local sources:** System and network logs  
+  - **Public sources:** Forums, open databases  
+- Data must be **collected**, **processed**, and **analyzed** to produce actionable insights  
+- Goals: Predict adversary behavior, reduce risks, and develop response strategies  
 
-**Digital Forensics and Incident Response (DFIR):**
+---
 
-**Digital Forensics:**
-> Forensics is the application of science to investigate crimes and establish facts
-> analyzing evidence of an attack and its perpetrators and other areas (intellectual property theft, cyber espionage, possesion of unauthorized content)
-> focuses on differant areas:
-> > File System: analyzing a digital forensics image of a system's storage (information about installed programs, created files, partially overwritten files, deleted files)
-> > System memory: malicious programs running in memory without saving it to the disk -> forensic image best way to analyze its contents and learn about the attack
-> > System logs: provide plenty of information about what happened on a system (some traces always remain)
-> > Network logs: logs of the network packets that have traversed a network
+### 🕵️ Digital Forensics and Incident Response (DFIR)
 
-**Incident Response:**
-> incident -> data breach or cyber attack (in some cases it can be something less critical such as misconfiguration, an intrusion attempt or policy violation)
-> Examples of a Cyber Attack -> making network inaccessible, defacing the poublic website, data breach (stealing company data)
-> specifies the methodology that should be followed in case of a cyber attack
-> aims to reduce damage and recover it in the shortest time possible
+#### 🧪 Digital Forensics  
+The forensic investigation of digital incidents and crimes, including:
 
-> four major phases:
-1. Preperation -> prevent/handle incidents
-2. Detection and Analysis -> detect incident, analyze any detected incident further
-3. Containment, Eradication, and Recovery -> stop it from affecting other systems, eliminate it, recover affected systems (e.g. Stop virus from spreading)
-4. Post-Incident Activity: produce report, share lessons learned
+- **File System Analysis:** Recovering deleted or altered files  
+- **Memory Analysis:** Inspecting malicious programs running in system memory  
+- **System and Network Logs:** Tracing attacker behavior through event logs  
 
-**Malware Analysis:**
-> Malware = malicious software
-> Software = program, documents, files you can save on a disk or send over the network
-> aims to learn about malicious programs using:
-> 1. Static analysis by inspecting the malicious program without running it
-> 2. Dynamic analysis by running the malware in a controlled environment and monitoring its activites
+#### 🚨 Incident Response  
+Structured process to handle cyber attacks and breaches:
 
-** Malware types:**
-> virus = piece of code that attaches itself to a programm and is designed to spread from one computer to another (altering, overwriting, deleting files)
-> Trojan Horse = program that shows one desirable function but hides a malicous function underneath (video player that gives attachker complete control over the system)
-> Ransomware = malicous program that encrypts the user's files -> makes the files unreadable without knowing the encryption password -> have to pay a "ransom"
+1. **Preparation:** Policies, tools, and awareness in place  
+2. **Detection and Analysis:** Identify and assess incidents  
+3. **Containment, Eradication, and Recovery:** Isolate and resolve the issue  
+4. **Post-Incident Activity:** Document outcomes and improve future response  
 
-**Task 3**
+---
 
-Scenario: I am a SOC analyst responsible for protecting a bank. We use a Security Information and Event Management (SIEM) tool, which gathers security-related information and events from various sources and presents them in one dashboard. If something suspicious happens = alert!
+### 🦠 Malware Analysis
 
-> not all alerts are malicous -> up to the analyst to use their expertise -> may encoutner an alert where a user has failed multiple login attempts (maybe he has forgotten his password or malicous)
-> alerts related to connections from unknown IP addresses
-> IP address = like a home address from your computer on the internet which tells other computers where to send the information you request. If IP unknown -> someone new is trying to connect or someone is attempting unauthorized access.
+Malware is malicious software designed to harm or exploit systems. Two primary analysis methods:
 
-** Simulating a SIEM **
-> Need to find the flag in this simulated environment
-> Have to inspect the alerts and find the malicious IP address from the alerts
-> Steps:
-> 1. Went over the alert messages
-> 2. found the IP
-> 3. Entered it to an IP-Scanner -> saw that it was found in a database and that it is malicious (ISP, Domain Name, Country, City)
-> 4. Choose to whom I would escalate this event
-> 5. Got permission to block that IP -> proceed and implement block rule
-> 6. Block malicious IP on the firewall
-> 7. Find out what message they left = FLAG FOUND!!!
-> 8. Answered the question (Entered the Flag)
+1. **Static Analysis:** Inspecting code without running it  
+2. **Dynamic Analysis:** Running malware in a controlled environment to observe behavior  
 
+#### Common Malware Types:
+- **Virus:** Attaches to programs and spreads by modifying or deleting files  
+- **Trojan Horse:** Appears legitimate but performs harmful actions in the background  
+- **Ransomware:** Encrypts user files and demands payment for decryption  
 
-> Flag = series of characters with a format like e.g. "THM{Random_WORDS}.
+---
 
-## Key Lessons/Takeaways:
-> different subfields (SOC, Threat Intelligence, Malware Analysis, DFIR)
-> how to deal with alerts in a simlulated SIEM environment
-> There are websites on the Internet that allow me to check the reputation of an IP address to see whether it's malicious or suspicious
-> e.g. open soruce databases (AbuseIPDB, Cisco talos Intelligence) where i can perform this reputation check and location check.
-> Most security analysts use these tools to aid them with alert investigations.
-> You can make the itnernet safer by reporting malicous IPs -> AbuseIPDB
-> shouldn't worry too much if it was a failed authentication attempt -> but it was a successful authentication from this malicious IP -> so report
-> You need to decide whom you would escalate the event
-> Firewalls are designed to block or allow traffic based on various criteria, including IP addresses
+## 🖥️ Task: Simulating a SIEM (Security Information and Event Management)
 
+**Scenario:**  
+As a SOC analyst at a bank, I used a SIEM system to monitor and respond to security events. The platform aggregates logs and alerts into a single dashboard for efficient analysis.
 
-## 🛠️ Tools  & Techniques Used
-> Security Information and Event Management tool
+### Key Actions Performed:
+1. Reviewed alert messages  
+2. Identified a suspicious IP address from the logs  
+3. Verified the IP using a reputation scanner (e.g., ISP, domain, country)  
+4. Escalated the event to the appropriate authority  
+5. Blocked the malicious IP using firewall rules  
+6. Found a message left by the attacker (a flag)  
+7. Submitted the flag as part of the exercise  
 
+⚠️ **Note:** Not all alerts are malicious — some could be false alarms, like a user forgetting their password. The analyst must investigate and determine the appropriate action.
 
- ## 🛠️ Commands
+---
 
+## 🎓 Key Lessons and Takeaways
 
+- Defensive security involves multiple subfields: SOC, Threat Intelligence, DFIR, and Malware Analysis  
+- Experience with handling alerts in a simulated SIEM environment  
+- Familiarity with open-source IP reputation databases (e.g., AbuseIPDB, Cisco Talos Intelligence)  
+- Analysts must decide whether and how to escalate events  
+- Firewalls play a critical role in blocking suspicious or malicious traffic  
+- Reporting malicious IPs helps make the internet safer  
 
+---
+
+## 🛠️ Tools & Techniques Used
+- **SIEM (Security Information and Event Management)** for alert monitoring and investigation  
+
+---
+
+## 🧾 Commands Used
+- N/A (This room focused on concepts and alert investigation rather than command-line interaction)
