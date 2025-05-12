@@ -82,6 +82,10 @@ This room explains what packets and frames are and how they are used to send dat
 | #    | RST       | Used if something goes wrong — ends the connection abruptly.|
 
 - Devices use **sequence numbers** to agree on the order of data.
+- **EXAMPLE**
+  - STEP 1 (SYN) - I want to talk
+  - STEP 2 (SYN/ACK) - I heard you , can you hear me?
+  - STEP 3 (ACK) - Yes! Let's talk!
 
 #### TCP Connection Closing:
 - When all data has been sent, one side sends a **FIN** packet.  
