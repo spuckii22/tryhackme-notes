@@ -45,18 +45,14 @@ Two major components of a website:
   - <html> – root of the document  
   - <head> – contains metadata and title  
   - <body> – visible content  
-  - <h1> – headings  
+  - <h*> – headings  
   - <p> – paragraphs
 
 - Tags can have attributes like:
   - class (for styling)  
   - src (for images or scripts)  
   - id (for JavaScript interaction)
-
-Example:
-<p class="bold-text"> or <img src="image.jpg">  
-Elements can also have unique IDs to be targeted by JavaScript.
-
+    
 ---
 
 ### Task 3 – JavaScript
@@ -100,8 +96,8 @@ Best practice: Always review a website’s source code when evaluating it for se
 
 Example:  
 If the site includes your input like  
-<h1>Hello</h1>  
-instead of plain text, it will render a large heading on the page.
+<h*>Hello</h*>  
+instead of plain text, it will render a heading on the page.
 
 This happens when user input is inserted directly into the DOM.
 
