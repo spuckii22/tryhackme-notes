@@ -115,7 +115,7 @@ This room covers:
 
 #### 🌓 Foreground & Background Processes
 - Foreground: default execution (e.g. `echo`).
-- Background: use `&` or `Ctrl + Z` to suspend.
+- Background: use `&` or `Ctrl + Z` 
 - Bring back to foreground: `fg`
 
 ---
